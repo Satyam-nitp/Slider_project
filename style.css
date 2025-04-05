@@ -11,6 +11,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 20px;
     justify-content: center;
     background-color: #111;
 }
@@ -20,7 +21,7 @@
     height: 500px;
     background-color: #fff;
     border-radius: 10px;
-    /* overflow: hidden; */
+    overflow: hidden;
     position: relative;
 }
 
@@ -28,9 +29,10 @@
     display: flex;
     flex-wrap: nowrap;
     height: 500px;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     width: max-content;
     position: absolute;
+    transition: all 250ms ease;
 }
 .images img{
     height: 500px;
@@ -39,7 +41,6 @@
 }
 
 .btns{
-    margin-top: 20px;
     display: flex;
     gap: 20px;
 }
@@ -50,4 +51,21 @@
     border-radius: 50%;
     
     font-size: 2rem;
+}
+
+.dots{
+    display: flex;
+    gap: 7.5px;
+    
+}
+
+.i{
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.active{
+    background-color: rgb(48, 48, 243);
 }
